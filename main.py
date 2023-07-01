@@ -1,8 +1,8 @@
 from fastapi import FastAPI
-from starlette.responses import RedirectResponse
+from os import environ as env
 
 app = FastAPI()
 
 @app.get("/")
-async def root():
-    return 0
+def root():
+    return {"details":f"Hello, secret sentence = {env['MY_ENV_VARIABLE']}."}
