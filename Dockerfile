@@ -9,4 +9,4 @@ WORKDIR /app
 
 RUN apt-get clean && apt-get update && apt-get install -y locales
 
-CMD ["uvicorn", "app.main:app", "--host=0.0.0.0", "--port", "8000", "--reload"]
+CMD ["uvicorn", "app.users:app", "--host=0.0.0.0", "--port", "8000", "--reload"]

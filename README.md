@@ -8,4 +8,7 @@ Luego de haber creado el contenedor usamos:
 
 - docker compose up
 
+La dirección para correr el backend en el local es:
+
+http://127.0.0.1:8000/docs#/
 
